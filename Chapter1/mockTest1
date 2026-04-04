@@ -1,0 +1,47 @@
+Problem Statement
+
+You are asked to design a basic URL Shortener service in Java.
+
+1. Functional Requirements:
+2. Convert a long URL → short URL
+3. Convert a short URL → original long URL
+4. Same long URL should always return the same short URL
+5. Short URL should be unique and collision-free
+6. Handle up to 1 million URLs efficiently
+
+Input:
+encode("https://www.google.com/search?q=java")
+
+Output:
+    "http://mahfooz.com/abc123"
+
+decode("http://mahfooz.com/abc123")
+
+Output:
+      "https://www.google.com/search?q=java"
+
+
+# Constraints
+1. Time Complexity: O(1) for encode & decode
+2. Space Complexity: Optimize for large data
+3. Avoid collisions
+4. No external DB (in-memory only) 
+
+Theory Questions (Must Answer)
+1. Why did you choose HashMap?
+Explain internal working of HashMap
+What is average & worst-case complexity?
+
+2. How will you avoid collisions?
+What if two URLs generate same short code?
+
+3. How will you scale this system?
+If millions of users hit your backend
+How to move from in-memory → distributed system?
+
+4. Thread Safety
+Is your solution thread-safe?
+If not, how will you fix it?
+
+5. Backend Concept
+If implemented in Spring Boot, how will APIs look?
