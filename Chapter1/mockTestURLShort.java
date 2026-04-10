@@ -9,6 +9,7 @@ public class mockTestURLShort {
     String baseUrl = "http://mahfooz.com/";
 
     int counter = 1;
+    
     public String encode(String longUrl){
        if (longToShort.containsKey(longUrl)) {
            return baseUrl + longToShort.get(longUrl);
